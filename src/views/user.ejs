@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header')%>
+    <title>user.name</title>
+</head>
+<body>
+    <%- include('./navbar.ejs')%>
+    <h1 class="text-center">
+        <%= user.name %>
+    </h1>
+    <p>
+        Username: <%= user.username %>
+    </p>
+    <p>
+        Email: <%= user.email %>
+    </p>
+        Address:
+        <p class="address">
+            <%= user.address.suite %><br>
+            <%= user.address.street %><br>
+            <%= user.address.zipcode %><br>
+            <%= user.address.city %>
+        </p>
+<a class="detailsButton" href="/updateUser">Modifier</a>
+</body>
+</html>

@@ -1,0 +1,119 @@
+img {
+    height: 200px;
+    width: auto;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.cardContainer {
+   display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 2px 2px lightgrey;
+    margin: 1em;
+    padding: 1em;
+    width: 20vw;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailsButton {
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.detailsButton:hover {
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    text-decoration: none;
+    padding: 4px;
+    border: 1px solid grey;
+}
+
+.deleteButton {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.deleteButton:hover {
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    padding: 4px;
+    border: 1px solid red;
+}
+
+.address {
+    margin-left: 4em;
+    margin-top: -1.5em;
+}
+
+.createButton {
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    height: 3em;
+    margin-left: 75vw;
+}
+
+.createButton:hover {
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    text-decoration: none;
+    padding: 4px;
+    height: 3em;
+    margin-left: 75vw;
+    border: 1px solid grey;
+}
+
+form {
+    margin-top: 3em;
+    text-align: end;
+    margin-right: 40vw;
+}
+
+.validButton {
+    margin-top: 1em;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    height: 2em;
+    border: none;
+}
+
+.validButton:hover {
+    margin-top: 1em;
+    border-radius: 5px;
+    background-color: white;
+    color: green;
+    text-decoration: none;
+    padding: 5px;
+    height: 2em;
+    border: 1px solid green;
+}
+
+input {
+    margin-bottom: 1em;
+}

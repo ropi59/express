@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+    <%- include('./header')%>
+        <title>Demo</title>
+    </head>
+    <body>
+        <%- include('./navbar.ejs')%>
+        <h1 class="text-center">
+            Vue de la page démo
+        </h1>
+        <h4>
+            <%= data1 %>
+        </h4>
+        <% for (let i = 0; i < data2.length; i++) { %>
+            <p> <%= data2[i] %></p>
+        <% } %>
+        <img src="/public/img/verrouiller.jpg">
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header')%>
+    <title>Utilisateurs</title>
+</head>
+<body>
+<%- include('./navbar.ejs')%>
+<h1 class="text-center">
+    Utilisateurs
+</h1>
+<div class="cardContainer">
+    <% for (let i = 0; i < users.length; i++) { %>
+        <div class="card">
+            <p> <%= users[i].name %> <%= users[i].username %></p>
+            <div class="buttonContainer">
+                <a class="detailsButton" href="/user/<%= users[i].id %>">Details</a>
+                <a class="deleteButton" href="/users/<%= users[i].id %>">Supprimer</a>
+            </div>
+        </div>
+    <% } %>
+
+</div>
+<a class="createButton" href="/create">Créer nouvel utilisateur</a>
+</body>
+</html>
